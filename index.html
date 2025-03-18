@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Content Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Smooth Loading Animation -->
+<div id="loading">Loading...</div>
+
+<header>
+    <h1>Video Hub 🎥</h1>
+    <input type="text" id="search" placeholder="Search videos...">
+    <button onclick="toggleDarkMode()">🌙</button>
+</header>
+
+<!-- Categories -->
+<nav>
+    <button onclick="filterVideos('all')">All</button>
+    <button onclick="filterVideos('music')">Music</button>
+    <button onclick="filterVideos('education')">Education</button>
+    <button onclick="filterVideos('comedy')">Comedy</button>
+</nav>
+
+<!-- Video Container -->
+<div id="video-container" class="video-grid"></div>
+
+<!-- Pagination -->
+<div id="pagination"></div>
+
+<!-- Floating Back-to-Top Button -->
+<button id="back-to-top" onclick="scrollToTop()">⬆️</button>
+
+<!-- Background Music -->
+<audio id="bg-music" autoplay loop>
+    <source src="assets/background-music.mp3" type="audio/mp3">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
